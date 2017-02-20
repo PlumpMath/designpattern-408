@@ -8,8 +8,8 @@ package com.github.xbest.creational.simplefactory;
  * Created by link on 2017/2/17.
  */
 public class SimpleProductFactory {
-    public static AbstractSimpleProduct getInstance(String name) {
-        AbstractSimpleProduct product = null;
+    public static SimpleProduct getInstance(String name) {
+        SimpleProduct product = null;
         if ("productA".equals(name)) {
             product = new SimpleProductA();
         } else if ("productB".equals(name)) {
