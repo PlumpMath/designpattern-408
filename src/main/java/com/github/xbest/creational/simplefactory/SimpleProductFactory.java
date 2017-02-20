@@ -1,4 +1,4 @@
-package com.github.xbest.factory;
+package com.github.xbest.creational.simplefactory;
 
 /**简单工厂模式，适合逻辑不是特别复杂的对象创建，工厂含有对象创建逻辑。
  * 客户端无需关心对象创建细节，只需要知道对象参数即可。

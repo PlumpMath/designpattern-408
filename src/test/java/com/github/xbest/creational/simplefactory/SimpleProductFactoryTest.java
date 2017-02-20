@@ -1,4 +1,4 @@
-package com.github.xbest.factory;
+package com.github.xbest.creational.simplefactory;
 
 import org.junit.Test;
 
@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class SimpleProductFactoryTest {
     @Test
     public void getInstance() throws Exception {
-        assertEquals(SimpleProductA.class,SimpleProductFactory.getInstance("productA").getClass());
+        assertEquals(SimpleProductA.class, SimpleProductFactory.getInstance("productA").getClass());
         assertEquals(SimpleProductB.class,SimpleProductFactory.getInstance("productB").getClass());
         assertNotEquals(SimpleProductB.class,SimpleProductFactory.getInstance("productA").getClass());
         assertNotEquals(SimpleProductA.class,SimpleProductFactory.getInstance("productB").getClass());
