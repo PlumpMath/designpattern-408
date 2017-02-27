@@ -5,7 +5,7 @@ package com.github.xbest.structural.adapter.classadapter;
  */
 public class Client {
     public static void main(String[] args) {
-        Adapter adapter = new Adapter();
+        Target adapter = new Adapter();
         adapter.doAdapterSomething();
         adapter.doAdapteeSomething();
     }
