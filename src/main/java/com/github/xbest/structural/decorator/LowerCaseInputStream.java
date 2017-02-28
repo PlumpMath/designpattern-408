@@ -3,10 +3,15 @@ package com.github.xbest.structural.decorator;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collection;
+import java.util.Collections;
 
-/**装饰模式，又叫wrapper pattern，主要是对已有的对象动态的添加一些额外的功能。<br/>
+/**
+ * 装饰模式，又叫wrapper pattern，主要是对已有的对象动态的添加一些额外的功能。<br/>
  * jdk中的典型案例就是{@link InputStream}、{@link java.io.OutputStream}、{@link java.io.Reader}、{@link java.io.Writer}<br/>
  * 本次的示例代码也是基于{@link FilterInputStream}来实现的，示例来源为headfirst例子。<br/>
+ * {@link Collections#synchronizedCollection(Collection)}、{@link Collections#unmodifiableCollection(Collection)}、{@link Collections#checkedCollection(Collection, Class)}
+ * 等也都是jdk中很好的decorator pattern案例，都是在原有集合类基础上加强了部分功能，例如锁等。<br/>
  * Created by link on 2017/2/28.
  */
 public class LowerCaseInputStream extends FilterInputStream {
