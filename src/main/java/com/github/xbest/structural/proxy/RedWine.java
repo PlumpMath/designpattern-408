@@ -11,6 +11,7 @@ package com.github.xbest.structural.proxy;
  * 而装饰模式解决的是原有的接口功能不足，需要丰富和扩展。<br/>
  * 代理模式与适配器模式最大的区别就是，代理模式代理类和被代理类实现的是同一套接口，<br/>
  * 而适配器模式则是实现的新的接口，与被适配的对象不是同一套接口。<br/>
+ * 代理模式在jdk中的典型应用就是{@link java.net.Proxy}、{@link java.lang.reflect.InvocationHandler}
  * Created by link on 2017/3/1.
  */
 public interface RedWine {
